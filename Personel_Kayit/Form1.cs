@@ -146,5 +146,11 @@ namespace Personel_Kayit
             baglanti.Close();
             MessageBox.Show("Personel Başarıyla Güncellendi");
         }
+
+        private void btnIstatistik_Click(object sender, EventArgs e)
+        {
+            FrmIstatistik fr = new FrmIstatistik();
+            fr.Show();
+        }
     }
 }

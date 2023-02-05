@@ -273,6 +273,7 @@
             this.btnIstatistik.TabIndex = 6;
             this.btnIstatistik.Text = "İstatistik";
             this.btnIstatistik.UseVisualStyleBackColor = true;
+            this.btnIstatistik.Click += new System.EventHandler(this.btnIstatistik_Click);
             // 
             // btnTemizle
             // 
