@@ -36,6 +36,7 @@ namespace Personel_Kayit
         private void Form1_Load(object sender, EventArgs e)
         {
             tbxAd.Focus();
+            this.tbl_PersonelsTableAdapter.Fill(this.personelVeriTabaniDataSet.tbl_Personels);
         }
 
         private void btnListele_Click(object sender, EventArgs e)
@@ -65,17 +66,55 @@ namespace Personel_Kayit
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            label1.Text = "True";
+            if (radioButton1.Checked==true)
+            {
+                label1.Text = "True";
+            }
+            
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            label1.Text= "False";
+            if (radioButton2.Checked == true)
+            {
+                label1.Text = "False";
+            }
+
         }
 
         private void btnTemizle_Click(object sender, EventArgs e)
         {
             temizle();
+        }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //datagrid de tıkladığımız sütundaki satır indexini secilen değerine atamış olduk
+            int secilen = dataGridView1.SelectedCells[0].RowIndex;
+
+
+            //seçilen hücre değeri sql datasındaki sıralamadan geliyor
+            //datagrid in satırları içerisinde secilen satır hücreleri içerisinde 0. değerini string olarak yazdır komutu
+            
+            tbxId.Text = dataGridView1.Rows[secilen].Cells[0].Value.ToString();
+            tbxAd.Text = dataGridView1.Rows[secilen].Cells[1].Value.ToString();
+            tbxSoyad.Text = dataGridView1.Rows[secilen].Cells[2].Value.ToString();
+            cbxSehirler.Text = dataGridView1.Rows[secilen].Cells[3].Value.ToString();
+            mtbxMaas.Text = dataGridView1.Rows[secilen].Cells[4].Value.ToString();
+            tbxMeslek.Text = dataGridView1.Rows[secilen].Cells[6].Value.ToString();
+            label1.Text = dataGridView1.Rows[secilen].Cells[5].Value.ToString();
+        }
+
+        private void label1_TextChanged(object sender, EventArgs e)
+        {
+            if (label1.Text=="True")
+            {
+                radioButton1.Checked= true;    
+            }
+            if (label1.Text=="False")
+            {
+                radioButton2.Checked= true;
+            }
         }
     }
 }
