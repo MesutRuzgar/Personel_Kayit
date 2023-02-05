@@ -20,9 +20,9 @@ namespace Personel_Kayit {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("PersonelVeriTabaniDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("PersonelVeriTabaniDataSet2")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class PersonelVeriTabaniDataSet : global::System.Data.DataSet {
+    public partial class PersonelVeriTabaniDataSet2 : global::System.Data.DataSet {
         
         private tbl_PersonelsDataTable tabletbl_Personels;
         
@@ -32,7 +32,7 @@ namespace Personel_Kayit {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public PersonelVeriTabaniDataSet() {
+        public PersonelVeriTabaniDataSet2() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -43,7 +43,7 @@ namespace Personel_Kayit {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected PersonelVeriTabaniDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected PersonelVeriTabaniDataSet2(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -142,7 +142,7 @@ namespace Personel_Kayit {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            PersonelVeriTabaniDataSet cln = ((PersonelVeriTabaniDataSet)(base.Clone()));
+            PersonelVeriTabaniDataSet2 cln = ((PersonelVeriTabaniDataSet2)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -223,9 +223,9 @@ namespace Personel_Kayit {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "PersonelVeriTabaniDataSet";
+            this.DataSetName = "PersonelVeriTabaniDataSet2";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/PersonelVeriTabaniDataSet.xsd";
+            this.Namespace = "http://tempuri.org/PersonelVeriTabaniDataSet2.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tabletbl_Personels = new tbl_PersonelsDataTable();
@@ -257,7 +257,7 @@ namespace Personel_Kayit {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            PersonelVeriTabaniDataSet ds = new PersonelVeriTabaniDataSet();
+            PersonelVeriTabaniDataSet2 ds = new PersonelVeriTabaniDataSet2();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -588,7 +588,7 @@ namespace Personel_Kayit {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                PersonelVeriTabaniDataSet ds = new PersonelVeriTabaniDataSet();
+                PersonelVeriTabaniDataSet2 ds = new PersonelVeriTabaniDataSet2();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -851,7 +851,7 @@ namespace Personel_Kayit {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                PersonelVeriTabaniDataSet ds = new PersonelVeriTabaniDataSet();
+                PersonelVeriTabaniDataSet2 ds = new PersonelVeriTabaniDataSet2();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1244,7 +1244,7 @@ namespace Personel_Kayit {
         }
     }
 }
-namespace Personel_Kayit.PersonelVeriTabaniDataSetTableAdapters {
+namespace Personel_Kayit.PersonelVeriTabaniDataSet2TableAdapters {
     
     
     /// <summary>
@@ -1412,7 +1412,7 @@ namespace Personel_Kayit.PersonelVeriTabaniDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(PersonelVeriTabaniDataSet.tbl_PersonelsDataTable dataTable) {
+        public virtual int Fill(PersonelVeriTabaniDataSet2.tbl_PersonelsDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1425,9 +1425,9 @@ namespace Personel_Kayit.PersonelVeriTabaniDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual PersonelVeriTabaniDataSet.tbl_PersonelsDataTable GetData() {
+        public virtual PersonelVeriTabaniDataSet2.tbl_PersonelsDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            PersonelVeriTabaniDataSet.tbl_PersonelsDataTable dataTable = new PersonelVeriTabaniDataSet.tbl_PersonelsDataTable();
+            PersonelVeriTabaniDataSet2.tbl_PersonelsDataTable dataTable = new PersonelVeriTabaniDataSet2.tbl_PersonelsDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1435,14 +1435,14 @@ namespace Personel_Kayit.PersonelVeriTabaniDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(PersonelVeriTabaniDataSet.tbl_PersonelsDataTable dataTable) {
+        public virtual int Update(PersonelVeriTabaniDataSet2.tbl_PersonelsDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(PersonelVeriTabaniDataSet dataSet) {
+        public virtual int Update(PersonelVeriTabaniDataSet2 dataSet) {
             return this.Adapter.Update(dataSet, "tbl_Personels");
         }
         
@@ -1673,7 +1673,7 @@ namespace Personel_Kayit.PersonelVeriTabaniDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(PersonelVeriTabaniDataSet.tbl_YoneticiDataTable dataTable) {
+        public virtual int Fill(PersonelVeriTabaniDataSet2.tbl_YoneticiDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1686,9 +1686,9 @@ namespace Personel_Kayit.PersonelVeriTabaniDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual PersonelVeriTabaniDataSet.tbl_YoneticiDataTable GetData() {
+        public virtual PersonelVeriTabaniDataSet2.tbl_YoneticiDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            PersonelVeriTabaniDataSet.tbl_YoneticiDataTable dataTable = new PersonelVeriTabaniDataSet.tbl_YoneticiDataTable();
+            PersonelVeriTabaniDataSet2.tbl_YoneticiDataTable dataTable = new PersonelVeriTabaniDataSet2.tbl_YoneticiDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1696,14 +1696,14 @@ namespace Personel_Kayit.PersonelVeriTabaniDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(PersonelVeriTabaniDataSet.tbl_YoneticiDataTable dataTable) {
+        public virtual int Update(PersonelVeriTabaniDataSet2.tbl_YoneticiDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(PersonelVeriTabaniDataSet dataSet) {
+        public virtual int Update(PersonelVeriTabaniDataSet2 dataSet) {
             return this.Adapter.Update(dataSet, "tbl_Yonetici");
         }
         
@@ -1870,7 +1870,7 @@ namespace Personel_Kayit.PersonelVeriTabaniDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(PersonelVeriTabaniDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(PersonelVeriTabaniDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._tbl_PersonelsTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.tbl_Personels.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -1898,7 +1898,7 @@ namespace Personel_Kayit.PersonelVeriTabaniDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(PersonelVeriTabaniDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(PersonelVeriTabaniDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._tbl_PersonelsTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.tbl_Personels.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -1924,7 +1924,7 @@ namespace Personel_Kayit.PersonelVeriTabaniDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(PersonelVeriTabaniDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(PersonelVeriTabaniDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._tbl_YoneticiTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.tbl_Yonetici.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -1974,7 +1974,7 @@ namespace Personel_Kayit.PersonelVeriTabaniDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(PersonelVeriTabaniDataSet dataSet) {
+        public virtual int UpdateAll(PersonelVeriTabaniDataSet2 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

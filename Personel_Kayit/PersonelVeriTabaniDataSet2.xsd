@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="PersonelVeriTabaniDataSet" targetNamespace="http://tempuri.org/PersonelVeriTabaniDataSet.xsd" xmlns:mstns="http://tempuri.org/PersonelVeriTabaniDataSet.xsd" xmlns="http://tempuri.org/PersonelVeriTabaniDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="PersonelVeriTabaniDataSet2" targetNamespace="http://tempuri.org/PersonelVeriTabaniDataSet2.xsd" xmlns:mstns="http://tempuri.org/PersonelVeriTabaniDataSet2.xsd" xmlns="http://tempuri.org/PersonelVeriTabaniDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
@@ -73,37 +73,37 @@
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="PersonelVeriTabaniDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PersonelVeriTabaniDataSet" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="PersonelVeriTabaniDataSet">
+  <xs:element name="PersonelVeriTabaniDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="PersonelVeriTabaniDataSet2" msprop:Generator_DataSetName="PersonelVeriTabaniDataSet2">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="tbl_Personels" msprop:Generator_RowClassName="tbl_PersonelsRow" msprop:Generator_RowEvHandlerName="tbl_PersonelsRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_PersonelsRowDeleted" msprop:Generator_RowDeletingName="tbl_PersonelsRowDeleting" msprop:Generator_RowEvArgName="tbl_PersonelsRowChangeEvent" msprop:Generator_TablePropName="tbl_Personels" msprop:Generator_RowChangedName="tbl_PersonelsRowChanged" msprop:Generator_UserTableName="tbl_Personels" msprop:Generator_RowChangingName="tbl_PersonelsRowChanging" msprop:Generator_TableClassName="tbl_PersonelsDataTable" msprop:Generator_TableVarName="tabletbl_Personels">
+        <xs:element name="tbl_Personels" msprop:Generator_RowEvHandlerName="tbl_PersonelsRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_PersonelsRowDeleted" msprop:Generator_RowDeletingName="tbl_PersonelsRowDeleting" msprop:Generator_RowEvArgName="tbl_PersonelsRowChangeEvent" msprop:Generator_TablePropName="tbl_Personels" msprop:Generator_RowChangedName="tbl_PersonelsRowChanged" msprop:Generator_RowChangingName="tbl_PersonelsRowChanging" msprop:Generator_TableClassName="tbl_PersonelsDataTable" msprop:Generator_RowClassName="tbl_PersonelsRow" msprop:Generator_TableVarName="tabletbl_Personels" msprop:Generator_UserTableName="tbl_Personels">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="PerId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="PerId" msprop:Generator_ColumnPropNameInTable="PerIdColumn" msprop:Generator_ColumnPropNameInRow="PerId" msprop:Generator_ColumnVarNameInTable="columnPerId" type="xs:int" />
-              <xs:element name="PerAd" msprop:Generator_UserColumnName="PerAd" msprop:Generator_ColumnPropNameInTable="PerAdColumn" msprop:Generator_ColumnPropNameInRow="PerAd" msprop:Generator_ColumnVarNameInTable="columnPerAd" minOccurs="0">
+              <xs:element name="PerId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="PerId" msprop:Generator_ColumnPropNameInTable="PerIdColumn" msprop:Generator_ColumnVarNameInTable="columnPerId" msprop:Generator_UserColumnName="PerId" type="xs:int" />
+              <xs:element name="PerAd" msprop:Generator_ColumnPropNameInRow="PerAd" msprop:Generator_ColumnPropNameInTable="PerAdColumn" msprop:Generator_ColumnVarNameInTable="columnPerAd" msprop:Generator_UserColumnName="PerAd" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="PerSoyad" msprop:Generator_UserColumnName="PerSoyad" msprop:Generator_ColumnPropNameInTable="PerSoyadColumn" msprop:Generator_ColumnPropNameInRow="PerSoyad" msprop:Generator_ColumnVarNameInTable="columnPerSoyad" minOccurs="0">
+              <xs:element name="PerSoyad" msprop:Generator_ColumnPropNameInRow="PerSoyad" msprop:Generator_ColumnPropNameInTable="PerSoyadColumn" msprop:Generator_ColumnVarNameInTable="columnPerSoyad" msprop:Generator_UserColumnName="PerSoyad" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="20" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="PerSehir" msprop:Generator_UserColumnName="PerSehir" msprop:Generator_ColumnPropNameInTable="PerSehirColumn" msprop:Generator_ColumnPropNameInRow="PerSehir" msprop:Generator_ColumnVarNameInTable="columnPerSehir" minOccurs="0">
+              <xs:element name="PerSehir" msprop:Generator_ColumnPropNameInRow="PerSehir" msprop:Generator_ColumnPropNameInTable="PerSehirColumn" msprop:Generator_ColumnVarNameInTable="columnPerSehir" msprop:Generator_UserColumnName="PerSehir" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="13" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="PerMaas" msprop:Generator_UserColumnName="PerMaas" msprop:Generator_ColumnPropNameInTable="PerMaasColumn" msprop:Generator_ColumnPropNameInRow="PerMaas" msprop:Generator_ColumnVarNameInTable="columnPerMaas" type="xs:int" minOccurs="0" />
-              <xs:element name="PerDurum" msprop:Generator_UserColumnName="PerDurum" msprop:Generator_ColumnPropNameInTable="PerDurumColumn" msprop:Generator_ColumnPropNameInRow="PerDurum" msprop:Generator_ColumnVarNameInTable="columnPerDurum" type="xs:boolean" minOccurs="0" />
-              <xs:element name="PerMeslek" msprop:Generator_UserColumnName="PerMeslek" msprop:Generator_ColumnPropNameInTable="PerMeslekColumn" msprop:Generator_ColumnPropNameInRow="PerMeslek" msprop:Generator_ColumnVarNameInTable="columnPerMeslek" minOccurs="0">
+              <xs:element name="PerMaas" msprop:Generator_ColumnPropNameInRow="PerMaas" msprop:Generator_ColumnPropNameInTable="PerMaasColumn" msprop:Generator_ColumnVarNameInTable="columnPerMaas" msprop:Generator_UserColumnName="PerMaas" type="xs:int" minOccurs="0" />
+              <xs:element name="PerDurum" msprop:Generator_ColumnPropNameInRow="PerDurum" msprop:Generator_ColumnPropNameInTable="PerDurumColumn" msprop:Generator_ColumnVarNameInTable="columnPerDurum" msprop:Generator_UserColumnName="PerDurum" type="xs:boolean" minOccurs="0" />
+              <xs:element name="PerMeslek" msprop:Generator_ColumnPropNameInRow="PerMeslek" msprop:Generator_ColumnPropNameInTable="PerMeslekColumn" msprop:Generator_ColumnVarNameInTable="columnPerMeslek" msprop:Generator_UserColumnName="PerMeslek" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="15" />
