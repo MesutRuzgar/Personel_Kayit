@@ -66,6 +66,7 @@
             this.tblPersonelsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.personelVeriTabaniDataSet = new Personel_Kayit.PersonelVeriTabaniDataSet();
             this.tbl_PersonelsTableAdapter = new Personel_Kayit.PersonelVeriTabaniDataSetTableAdapters.tbl_PersonelsTableAdapter();
+            this.btnRaporlar = new System.Windows.Forms.Button();
             this.gbxPersonel.SuspendLayout();
             this.gbxIslemler.SuspendLayout();
             this.gbxKayitlar.SuspendLayout();
@@ -252,6 +253,7 @@
             // 
             // gbxIslemler
             // 
+            this.gbxIslemler.Controls.Add(this.btnRaporlar);
             this.gbxIslemler.Controls.Add(this.btnGrafikler);
             this.gbxIslemler.Controls.Add(this.btnIstatistik);
             this.gbxIslemler.Controls.Add(this.btnTemizle);
@@ -425,6 +427,16 @@
             // 
             this.tbl_PersonelsTableAdapter.ClearBeforeFill = true;
             // 
+            // btnRaporlar
+            // 
+            this.btnRaporlar.Location = new System.Drawing.Point(47, 277);
+            this.btnRaporlar.Name = "btnRaporlar";
+            this.btnRaporlar.Size = new System.Drawing.Size(133, 27);
+            this.btnRaporlar.TabIndex = 8;
+            this.btnRaporlar.Text = "Raporlar";
+            this.btnRaporlar.UseVisualStyleBackColor = true;
+            this.btnRaporlar.Click += new System.EventHandler(this.btnRaporlar_Click);
+            // 
             // frmAnaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -487,6 +499,7 @@
         private System.Windows.Forms.DataGridViewCheckBoxColumn perDurumDataGridViewCheckBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn perMeslekDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnRaporlar;
     }
 }
 

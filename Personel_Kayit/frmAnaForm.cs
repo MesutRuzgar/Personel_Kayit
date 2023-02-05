@@ -158,5 +158,12 @@ namespace Personel_Kayit
             FrmGrafikler fr = new FrmGrafikler();
             fr.Show();
         }
+
+        private void btnRaporlar_Click(object sender, EventArgs e)
+        {
+            frmRaporlar frmRaporlar= new frmRaporlar();
+            frmRaporlar.Show();
+
+        }
     }
 }
