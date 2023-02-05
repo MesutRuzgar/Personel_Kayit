@@ -66,11 +66,11 @@ namespace Personel_Kayit
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButton1.Checked==true)
+            if (radioButton1.Checked == true)
             {
                 label1.Text = "True";
             }
-            
+
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
@@ -95,7 +95,7 @@ namespace Personel_Kayit
 
             //seçilen hücre değeri sql datasındaki sıralamadan geliyor
             //datagrid in satırları içerisinde secilen satır hücreleri içerisinde 0. değerini string olarak yazdır komutu
-            
+
             tbxId.Text = dataGridView1.Rows[secilen].Cells[0].Value.ToString();
             tbxAd.Text = dataGridView1.Rows[secilen].Cells[1].Value.ToString();
             tbxSoyad.Text = dataGridView1.Rows[secilen].Cells[2].Value.ToString();
@@ -108,25 +108,43 @@ namespace Personel_Kayit
         private void label1_TextChanged(object sender, EventArgs e)
         {
             //label eventinden textChanged yani yazı değiştiğinde ne olacak'a çift tıklayıp kodlarımızı doldurduk
-            if (label1.Text=="True")
+            if (label1.Text == "True")
             {
-                radioButton1.Checked= true;    
+                radioButton1.Checked = true;
             }
-            if (label1.Text=="False")
+            if (label1.Text == "False")
             {
-                radioButton2.Checked= true;
+                radioButton2.Checked = true;
             }
         }
 
         private void btnSil_Click(object sender, EventArgs e)
         {
             baglanti.Open();
-            SqlCommand komutSil = new SqlCommand("Delete From tbl_Personels Where PerId=@k1",baglanti);
-            komutSil.Parameters.AddWithValue("@k1",tbxId.Text);
+            SqlCommand komutSil = new SqlCommand("Delete From tbl_Personels Where PerId=@k1", baglanti);
+            komutSil.Parameters.AddWithValue("@k1", tbxId.Text);
             komutSil.ExecuteNonQuery();
             baglanti.Close();
             MessageBox.Show("Kayıt Başarıyla Silindi");
             temizle();
+        }
+
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+            baglanti.Open();
+
+            SqlCommand komutGuncelle = new SqlCommand("Update tbl_Personels Set PerAd=@a1,PerSoyad=@a2,PerSehir=@a3,PerMaas=@a4,PerDurum=@a5,PerMeslek=@a6 where PerId=@a7" , baglanti);
+
+            komutGuncelle.Parameters.AddWithValue("@a1", tbxAd.Text);
+            komutGuncelle.Parameters.AddWithValue("@a2", tbxSoyad.Text);
+            komutGuncelle.Parameters.AddWithValue("@a3", cbxSehirler.Text);
+            komutGuncelle.Parameters.AddWithValue("@a4", mtbxMaas.Text);
+            komutGuncelle.Parameters.AddWithValue("@a5", label1.Text);
+            komutGuncelle.Parameters.AddWithValue("@a6", tbxMeslek.Text);
+            komutGuncelle.Parameters.AddWithValue("@a7", tbxId.Text);
+            komutGuncelle.ExecuteNonQuery();
+            baglanti.Close();
+            MessageBox.Show("Personel Başarıyla Güncellendi");
         }
     }
 }
