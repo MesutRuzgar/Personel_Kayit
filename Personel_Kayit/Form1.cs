@@ -107,6 +107,7 @@ namespace Personel_Kayit
 
         private void label1_TextChanged(object sender, EventArgs e)
         {
+            //label eventinden textChanged yani yazı değiştiğinde ne olacak'a çift tıklayıp kodlarımızı doldurduk
             if (label1.Text=="True")
             {
                 radioButton1.Checked= true;    
@@ -115,6 +116,17 @@ namespace Personel_Kayit
             {
                 radioButton2.Checked= true;
             }
+        }
+
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            baglanti.Open();
+            SqlCommand komutSil = new SqlCommand("Delete From tbl_Personels Where PerId=@k1",baglanti);
+            komutSil.Parameters.AddWithValue("@k1",tbxId.Text);
+            komutSil.ExecuteNonQuery();
+            baglanti.Close();
+            MessageBox.Show("Kayıt Başarıyla Silindi");
+            temizle();
         }
     }
 }
