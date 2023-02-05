@@ -1,6 +1,6 @@
 ﻿namespace Personel_Kayit
 {
-    partial class Form1
+    partial class frmAnaForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.gbxPersonel = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.cbxSehirler = new System.Windows.Forms.ComboBox();
@@ -65,7 +66,6 @@
             this.tblPersonelsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.personelVeriTabaniDataSet = new Personel_Kayit.PersonelVeriTabaniDataSet();
             this.tbl_PersonelsTableAdapter = new Personel_Kayit.PersonelVeriTabaniDataSetTableAdapters.tbl_PersonelsTableAdapter();
-            this.label1 = new System.Windows.Forms.Label();
             this.gbxPersonel.SuspendLayout();
             this.gbxIslemler.SuspendLayout();
             this.gbxKayitlar.SuspendLayout();
@@ -99,6 +99,17 @@
             this.gbxPersonel.TabIndex = 0;
             this.gbxPersonel.TabStop = false;
             this.gbxPersonel.Text = "Personel";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(236, 213);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 18);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "label1";
+            this.label1.Visible = false;
+            this.label1.TextChanged += new System.EventHandler(this.label1_TextChanged);
             // 
             // radioButton2
             // 
@@ -264,6 +275,7 @@
             this.btnGrafikler.TabIndex = 7;
             this.btnGrafikler.Text = "Grafikler";
             this.btnGrafikler.UseVisualStyleBackColor = true;
+            this.btnGrafikler.Click += new System.EventHandler(this.btnGrafikler_Click);
             // 
             // btnIstatistik
             // 
@@ -413,18 +425,7 @@
             // 
             this.tbl_PersonelsTableAdapter.ClearBeforeFill = true;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(236, 213);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 18);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "label1";
-            this.label1.Visible = false;
-            this.label1.TextChanged += new System.EventHandler(this.label1_TextChanged);
-            // 
-            // Form1
+            // frmAnaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -433,7 +434,7 @@
             this.Controls.Add(this.gbxIslemler);
             this.Controls.Add(this.gbxKayitlar);
             this.Controls.Add(this.gbxPersonel);
-            this.Name = "Form1";
+            this.Name = "frmAnaForm";
             this.Text = "Personel Kayıt";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.gbxPersonel.ResumeLayout(false);
