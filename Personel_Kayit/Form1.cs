@@ -20,6 +20,19 @@ namespace Personel_Kayit
         //sql datamıza bağlantı yolu oluşturuyoruz
         SqlConnection baglanti = new SqlConnection("Data Source = RUZGAR\\SQLEXPRESS; Initial Catalog = PersonelVeriTabani; Integrated Security = True");
 
+        void temizle()
+        {
+            tbxId.Text = "";
+            tbxAd.Text = "";
+            tbxSoyad.Text = "";
+            tbxMeslek.Text = "";
+            mtbxMaas.Text = "";
+            cbxSehirler.Text = "";
+            radioButton1.Checked = false;
+            radioButton2.Checked = false;
+            tbxAd.Focus();
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
             tbxAd.Focus();
@@ -58,6 +71,11 @@ namespace Personel_Kayit
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
             label1.Text= "False";
+        }
+
+        private void btnTemizle_Click(object sender, EventArgs e)
+        {
+            temizle();
         }
     }
 }

@@ -282,6 +282,7 @@
             this.btnTemizle.TabIndex = 5;
             this.btnTemizle.Text = "Temizle";
             this.btnTemizle.UseVisualStyleBackColor = true;
+            this.btnTemizle.Click += new System.EventHandler(this.btnTemizle_Click);
             // 
             // btnGuncelle
             // 
